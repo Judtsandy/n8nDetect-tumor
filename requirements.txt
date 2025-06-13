@@ -1,0 +1,10 @@
+flask==2.0.3
+tensorflow==2.8.0
+opencv-python==4.5.5.64
+numpy==1.22.3
+google-api-python-client==2.40.0
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==0.4.6
+protobuf==3.20.3
+werkzeug==2.3.8 
+Pillow==9.5.0

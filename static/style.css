@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+.result-section {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.preview-section {
+    margin-top: 20px;
+}
+
+.preview-section h3 {
+    color: #00796b;
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.preview-section img {
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.preview-section img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.preview-section img#tumorPreview {
+    border: 2px solid #d81b60; /* Borde rosa para destacar la imagen con tumor */
+}

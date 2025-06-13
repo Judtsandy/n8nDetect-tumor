@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain MRI Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Detector de Tumores Cerebrales</h1>
+        <p>Sube una imagen de resonancia magnética para analizarla</p>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="predict()">Analizar</button>
+        </div>
+        <div id="result" class="result-section"></div>
+        <div id="preview" class="preview-section">
+            <h3>Imagen Original</h3>
+            <img id="imagePreview" src="" alt="Vista previa" style="display:none; max-width: 300px;">
+            <h3>Imagen con Tumor Resaltado (si aplica)</h3>
+            <img id="tumorPreview" src="" alt="Vista previa con tumor" style="display:none; max-width: 300px;">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
